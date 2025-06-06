@@ -1,0 +1,16 @@
+{
+  "name": "Prometheus Lab",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "prometheus",  // <-- adjust if you have a different main service name
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [9090, 3000, 9100],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "EditorConfig.EditorConfig"
+      ]
+    }
+  },
+  "postCreateCommand": "docker-compose up -d"
+}
