@@ -1,16 +1,6 @@
 {
-    "name": "Prometheus Lab",
-    "dockerComposeFile": [
-        "../docker-compose.yml"
-    ],
-    "service": "prometheus",
-    "workspaceFolder": "/workspace",
-    "forwardPorts": [
-        3000,
-        9090,
-        9100,
-        9250,
-        9633
-    ],
-    "postCreateCommand": "docker-compose up -d"
+  "name": "Simple Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {},
+  "postCreateCommand": "echo 'Hello from dev container!'"
 }
